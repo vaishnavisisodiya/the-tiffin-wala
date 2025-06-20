@@ -19,6 +19,7 @@ const uploads = (buffer) =>{
             }
           }
         );
+        // converts the buffer into a readable stream and pipes it to the Cloudinary upload stream.
       streamifier.createReadStream(buffer).pipe(stream);
     });
 }

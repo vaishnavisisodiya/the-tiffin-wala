@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { CircularProgress } from '@mui/material'
+import { CircularProgress } from '@mui/material'  
 import ChooseUs from '../components/Home/ChooseUs'
 import HeroSlider from '../components/Home/HeroSlider'
 import Info from '../components/Home/Info'

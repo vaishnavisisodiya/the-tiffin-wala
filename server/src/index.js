@@ -31,12 +31,12 @@ var originsWhitelist = [
     'http://localhost:3000'
  ];
  var corsOptions = {
-     origin: function(origin, callback){
-         var isWhitelisted = originsWhitelist.indexOf(origin) !== -1;
-         callback(null, isWhitelisted);
-     },
-     credentials:true
-  }
+    origin: function(origin, callback){
+        var isWhitelisted = originsWhitelist.indexOf(origin) !== -1;
+        callback(null, isWhitelisted);
+    },
+    credentials: true
+};
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(cookieParser())
@@ -66,7 +66,6 @@ app.use('/api/v1/user', user);
 app.use('/api/v1/provider',provider)
 app.use('/api/v1/food',food)
 app.use('/api/v1/order',order)
-app.use('/api/v1/address',address);
 app.use('/api/v1/review',review);
 app.use('/api/v1/reach',contact);
 app.use('/api/v1/initialData',initialData)

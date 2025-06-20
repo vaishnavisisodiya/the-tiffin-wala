@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import HomePage from "./pages/Home.page";
@@ -22,6 +22,7 @@ import { getAllReview } from "./redux/review/review.action";
 import AboutUspage from "./pages/AboutUspage";
 import ContactUsPage from "./pages/ContactUsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import './App.css';
 // PrivateRoute
 const PrivateRoute = ({ children }) => {
   const provider = useSelector((state) => state.provider);
@@ -29,6 +30,28 @@ const PrivateRoute = ({ children }) => {
 };
 
 function App() {
+
+  // const [darkMode, setDarkMode] = useState(false);
+
+  // useEffect(() => {
+  //   const savedMode = localStorage.getItem('darkMode') === 'true';
+  //   setDarkMode(savedMode);
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem('darkMode', darkMode);
+  //   if (darkMode) {
+  //     document.body.classList.add('dark-mode');
+  //   } else {
+  //     document.body.classList.remove('dark-mode');
+  //   }
+  // }, [darkMode]);
+
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  // };
+
+
   const dispatch = useDispatch();
   useEffect(() => {
     if (localStorage.providerToken) dispatch(getProviderDetails());
@@ -44,6 +67,7 @@ function App() {
     if (provider.isProvider) navigate("/provider/dashboard/orders");
   }, [provider]);
   return (
+    <>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/signin" element={<SignInPage />} />
@@ -72,6 +96,12 @@ function App() {
       </Route>
         <Route path="*" element={<NotFoundPage/>} />
     </Routes>
+    {/* <div className="App">
+      <button onClick={toggleDarkMode}>
+        {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      </button>
+    </div> */}
+    </>
   );
 }
 

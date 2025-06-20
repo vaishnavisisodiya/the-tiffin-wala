@@ -6,7 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import HeroSliderCard from './HeroSliderCard';
 
-function HeroSlider() {
+function HeroSlider() 
+{
   const slidesData = [
     {
       title: "Get Your Meals Delivered from Curated Home Chefs Around You",

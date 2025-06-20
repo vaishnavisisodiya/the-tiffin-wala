@@ -31,16 +31,16 @@ const Ourteamslider=()=>{
         className="mySwiper" >
         <SwiperSlide>
             <div className=" flex flex-col items-center text-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3WSuQ7LbKzNkhuP4fgs9__y1afXu1otF2A&s" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
-                <h4 className="mt-2 text-xl font-medium">Deepesh Bhatiya</h4>
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQGHPzYxgnnMxg/profile-displayphoto-shrink_400_400/B56ZYcGE7zHQAg-/0/1744228077859?e=1755734400&v=beta&t=MamQ3Qcw5z4XDMuWQg42K58Ib-txreiXDCFrO5jzPe8" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
+                <h4 className="mt-2 text-xl font-medium">Vaishnavi Sisodiya</h4>
                  <p >Developer</p>
                  <p className="px-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus consequatur veritatis harum sunt sapiente! Ratione quae, officiis adipisci dolorem mollitia nihil at voluptatibus.</p>
             </div>
         </SwiperSlide>
         <SwiperSlide>
             <div className=" flex flex-col items-center text-center">
-                <img src="https://media.licdn.com/dms/image/v2/C4D03AQEMB8DZh75uZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1661534351686?e=1729123200&v=beta&t=Yh9rc4TN6xCmUXaEkK5zvk02sWuT4IhcePR_R18xwlw" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
-                <h4 className="mt-2 text-xl font-medium">Anshul Parihar</h4>
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQE8NyPsnu_xIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703960409239?e=1755734400&v=beta&t=6LvdvsrKKcdfw8K74yr1bvShQ34KUlVal0h4VG8N0-k" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
+                <h4 className="mt-2 text-xl font-medium">Komal Shrivastav</h4>
                  <p >Developer</p>
                  <p className="px-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus consequatur veritatis harum sunt sapiente! Ratione quae, officiis adipisci dolorem mollitia nihil at voluptatibus.</p>
             </div>
