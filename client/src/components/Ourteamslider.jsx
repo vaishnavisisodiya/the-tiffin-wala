@@ -34,7 +34,7 @@ const Ourteamslider=()=>{
                 <img src="https://media.licdn.com/dms/image/v2/D5603AQGHPzYxgnnMxg/profile-displayphoto-shrink_400_400/B56ZYcGE7zHQAg-/0/1744228077859?e=1755734400&v=beta&t=MamQ3Qcw5z4XDMuWQg42K58Ib-txreiXDCFrO5jzPe8" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
                 <h4 className="mt-2 text-xl font-medium">Vaishnavi Sisodiya</h4>
                  <p >Developer</p>
-                 <p className="px-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus consequatur veritatis harum sunt sapiente! Ratione quae, officiis adipisci dolorem mollitia nihil at voluptatibus.</p>
+                 <p className="px-14">Full stack web Developer</p>
             </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -42,7 +42,7 @@ const Ourteamslider=()=>{
                 <img src="https://media.licdn.com/dms/image/v2/D4D03AQE8NyPsnu_xIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703960409239?e=1755734400&v=beta&t=6LvdvsrKKcdfw8K74yr1bvShQ34KUlVal0h4VG8N0-k" alt="teammember img" style={{width:"11.4rem",borderRadius:"50%"}}/>
                 <h4 className="mt-2 text-xl font-medium">Komal Shrivastav</h4>
                  <p >Developer</p>
-                 <p className="px-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus consequatur veritatis harum sunt sapiente! Ratione quae, officiis adipisci dolorem mollitia nihil at voluptatibus.</p>
+                 <p className="px-14">Full stack web Developer</p>
             </div>
         </SwiperSlide>
        
