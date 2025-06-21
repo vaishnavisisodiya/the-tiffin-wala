@@ -22,6 +22,7 @@ export const login = (user) => async (dispatch) => {
     );
     return dispatch(userSuccess(userData.data));
   } catch (error) {
+    console.log(error);
     return dispatch(userFail(error.response.data.message));
   }
 };

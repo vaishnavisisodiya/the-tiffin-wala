@@ -27,7 +27,7 @@ env.config();
 //     credentials: true
 // }))
 var originsWhitelist = [
-    'https://tiffin-managment-client.vercel.app',
+    'https://the-tiffin-wala-q7bd.vercel.app',
     'http://localhost:3000'
  ];
  var corsOptions = {
