@@ -10,6 +10,7 @@ import {
   providerRegistrationSuccess,
 } from "./provider.reducer";
 const url= process.env.REACT_APP_BASE_URL;
+console.log(url);
 export const loginProvider = (provider) => async (dispatch) => {
   try {
     dispatch(providerRequest());
