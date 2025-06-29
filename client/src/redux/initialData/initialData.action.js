@@ -4,6 +4,7 @@ import {
   initialDataRequest,
   initialDataSuccess,
 } from "./initialData.reducer";
+const url= process.env.REACT_APP_BASE_URL;
 
 export const getInitialData = async (dispatch) => {
   try {
@@ -11,7 +12,7 @@ export const getInitialData = async (dispatch) => {
     dispatch(initialDataRequest());
     const data = await axios({
       method: "GET",
-      url: "http://localhost:4000/api/v1/initialData",
+      url: `${url}/api/v1/initialData`,
     });
     dispatch(initialDataSuccess(data.data));
   } catch (error) {

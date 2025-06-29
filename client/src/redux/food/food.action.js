@@ -7,13 +7,14 @@ import {
   addFoodSuccess,
   deleteFoodSuccess,
 } from "./food.reducer";
+const url= process.env.REACT_APP_BASE_URL;
 
 export const getAllFood = (_id) => async (dispatch) => {
   try {
     dispatch(foodRequest());
     const foodData = await axios({
       method: "GET",
-      url: `http://localhost:4000/api/v1/food/provider/${_id}`,
+      url: `${url}/api/v1/food/provider/${_id}`,
     });
     return dispatch(foodSuccess(foodData.data));
   } catch (error) {
@@ -25,7 +26,7 @@ export const getFoodById = (_id) => async (dispatch) => {
     dispatch(foodRequest());
     const food = await axios({
       method: "GET",
-      url: ` http://localhost:4000/api/v1/food/${_id}`,
+      url: `${url}/api/v1/food/${_id}`,
     });
     return dispatch(getFoodByIdSuccess(food.data));
   } catch (error) {
@@ -37,7 +38,7 @@ export const addFood = (data) => async (dispatch) => {
     dispatch(foodRequest());
     const food = await axios({
       method: "POST",
-      url: "http://localhost:4000/api/v1/food",
+      url: `${url}/api/v1/food`,
       data,
     });
     return dispatch(addFoodSuccess(food.data));
@@ -51,7 +52,7 @@ export const deleteFood = (_id) => async (dispatch) => {
     dispatch(foodRequest());
     await axios({
       method: "DELETE",
-      url: `http://localhost:4000/api/v1/food/${_id}`,
+      url: `${url}/api/v1/food/${_id}`,
     });
     dispatch(deleteFoodSuccess(_id));
   } catch (error) {
